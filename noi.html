@@ -774,6 +774,14 @@
     
 </script>
 
+
+
+
+
+
+
+
+
 <script id="ch0105/13">
     var a=+prompt("a:")
     var n=+prompt("n:")
@@ -818,6 +826,109 @@
    
     
 </script>
+
+<script id="ch0105/16">
+    var N=+prompt("N:")
+    var K=+prompt("K:")
+    var y=0
+    var s1=0
+    var s2=200
+    var flag="Impossible"
+
+
+  
+    while((y<=20)&&(s2>s1)){
+        y+=1
+        s1+=N
+        if(y>=2){
+            s2*=(1+K/100)
+        }
+       
+      
+    }
+    if (s1>s2){
+        flag=y
+    }
+    console.log(flag)
+  
+    
+</script>
+
+<script id="ch0105/17">
+    var a=1
+    var b=1
+    var k=+prompt("k")
+    for(var i=1;i<k;i++){
+        [a, b] = [b, a + b]
+        
+    }
+    console.log(a)
+  
+    
+</script>
+
+<script id="ch0105/18">
+    var n=+prompt("n:")
+    var p=+prompt("patients:")
+    var e=+prompt("effective numbers:")
+    var x=e/p
+    for(var i=1;i<n;i++){
+        var p=+prompt("patients:")
+        var e=+prompt("effective numbers:")
+        var y=e/p
+        if (y-x>0.05){
+            console.log("better")
+
+        } else if(x-y>0.05){
+            console.log("worse")
+
+        } else{
+            console.log("same")
+        }
+
+
+    }
+     
+    
+</script>
+
+<script id="ch0105/19">
+    var n=+prompt("n:")
+    var sum=0
+    for(var i=0;i<n;i++){
+        var x=+prompt("x:")
+        var y=+prompt("y")
+        var p=+prompt("persons:")
+        var t=(x*x+y*y)**0.5/50*2+p*1.5
+        sum+=t
+
+
+    }
+    console.log(Math.ceil(sum))
+     
+    
+</script>
+
+<script id="ch0105/20">
+    var h=+prompt("h:")
+    var h1=h
+    var sum=0
+    for(var i=0;i<10;i++){
+        sum+=2*h
+        h*=0.5
+
+    }
+    console.log(sum-h1)
+    console.log(h)
+     
+    
+</script>
+
+
+
+
+
+
 
 
 
