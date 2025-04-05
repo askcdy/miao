@@ -1012,7 +1012,7 @@
 
 
 <script id="ch0105/25">
-    for(var i=1+9+81;i<=(6+6*7+6*7*7);i++){
+    for(var i=1+81;i<=(6+6*7+6*7*7);i++){
         var s7=i%7
         var t7=(i-s7)/7%7
         var h7=(i-s7-t7*7)/49
@@ -1021,7 +1021,10 @@
         var h9=(i-s9-t9*9)/81
         if(s7==h9&&t7==t9&&h7==s9){
             console.log(i)
+            console.log(""+s7+t7+h7)
+            console.log(""+s9+t9+h9)
         }
+
 
 
 
