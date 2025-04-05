@@ -968,6 +968,51 @@
     
 </script> -->
 
+<script id="ch0105/23">
+    var m=+prompt("m:")
+    var n=+prompt("n:")
+    var c=0
+    while(n>0){
+        n--
+        var pm=+prompt("病人药品量:")
+        m-=pm
+        if(m<0){
+            m+=pm
+            c++
+            continue
+        }
+        
+        
+    }
+    console.log(c)
+
+   
+</script>
+
+
+
+
+
+<script id="ch0105/31">
+    var n=+prompt("n:")
+    var m=+prompt("m")
+    var str="1"
+    for(var i=2;i<=n;i++){
+        var k=i
+        for(var j=1;j<=m;j++){
+            if (k%j==0){
+                k*=-1
+            }
+        }
+        if (k<0){
+            str=str+","+(-k)
+        }
+        
+    }
+    console.log(str)
+    
+</script>
+
 
 
 
