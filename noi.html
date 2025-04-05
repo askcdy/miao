@@ -940,33 +940,30 @@
     
 </script>
 
-<!-- <script id="ch0105/22">
-    var sum=0
+ <script id="ch0105/22">
+    var wallet=0
     var bank=0
     var flag=1
     for(var i=1;i<=12;i++){
-        var mon=+prompt("budget")
-        sum+=300
-        if(sum-mon>0){
-            sum-=mon
-       
-            bank=sum-sum%100
-            sum%=100
-           
-            
-        }else{
-            console.log(i)
-            break
+        var budget=+prompt()
+        wallet+=300
+        wallet-=budget
+        if(wallet<0){
+            console.log(-i)
             flag=0
+            break
         }
-       
-        }
-        if(flag){
-            sum+=bank*1.2
-
-        }  
+        bank+=wallet-wallet%100
+        wallet=wallet%100
+    }
+    if(flag>0){
+        console.log(1.2*bank+wallet)
+    }
     
-</script> -->
+    
+</script> 
+
+
 
 <script id="ch0105/23">
     var m=+prompt("m:")
@@ -988,6 +985,97 @@
 
    
 </script>
+
+
+
+<script id="ch0105/24">
+    var n=+prompt("n:")
+    var max=0
+    var nt=0
+    while(n>0){
+        var dp=+prompt("舒张压:")
+        var sp=+prompt("收缩压:")
+        if((dp>=90&&dp<=140)&&(sp>=60&&sp<=90)){
+            nt+=1
+            max=max<nt?nt:max
+        } else{
+            nt=0
+        } 
+        n--
+    }
+    console.log(max)
+
+   
+</script>
+
+
+
+
+<script id="ch0105/25">
+    for(var i=1+9+81;i<=(6+6*7+6*7*7);i++){
+        var s7=i%7
+        var t7=(i-s7)/7%7
+        var h7=(i-s7-t7*7)/49
+        var s9=i%9
+        var t9=(i-s9)/9%9
+        var h9=(i-s9-t9*9)/81
+        if(s7==h9&&t7==t9&&h7==s9){
+            console.log(i)
+        }
+
+
+
+    }
+
+   
+</script>
+
+<script id="ch0105/26">
+    var n=+prompt("n:")
+    var c=0
+    while(n>0){
+        var number=+prompt("四位数:")
+        var s1=number%10
+        var s2=(number-s1)/10%10
+        var s3=(number-s1-s2*10)/100%10
+        var s4=(number-s1-s2*10-s3*100)/1000
+        if (s1 >(s2+s3+s4)){
+            c++
+        }
+        n--
+    }
+    console.log(c)
+
+   
+</script>
+
+
+
+<script id="ch0105/27">
+    var n=1
+    var sn=0
+    var k=+prompt("k:")
+    while(n){
+        
+        total+=1/n
+        if(total>k){
+            break
+        }
+        n++
+    }
+    console.log(n)
+
+   
+</script>
+
+
+
+
+
+
+
+
+
 
 
 
