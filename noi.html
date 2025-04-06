@@ -1089,6 +1089,54 @@
    
 </script>
 
+<script id="ch0105/29">
+    var n=+prompt("n:")
+    var s=0
+    var r=0
+    do{
+        s=n%10
+        n=(n-s)/10
+        r=10*r+s
+
+
+
+    }while(n!=0)
+   console.log(r)
+
+   
+</script>
+
+
+<script id="ch0105/30">
+    var n=+prompt("n:")
+    var k=+prompt("k:")
+    var c1
+    
+    if(n%19==0){
+        c1=1
+    }else{
+        c1=0
+    }
+    do{
+
+        var s=n%10
+        n=(n-s)/10
+        if(s==3){
+            k--
+        }
+        
+    }while(n>0)
+        if(c1&&!k){
+            console.log("YES")
+        }else{
+            console.log("NO")
+        }
+
+
+    
+   
+</script>
+
 
 
 
@@ -1124,6 +1172,69 @@
     console.log(str)
     
 </script>
+
+<script id="ch0105/32">
+    
+    var p=1
+    var q=2
+    var n=+prompt("n:")
+    var sum=0
+    while(n>0){
+        sum+=(q/p);
+        [p,q] = [q,p+q]
+      
+        n--
+    }
+    console.log(sum.toFixed(4))
+    
+
+</script>
+
+<script id="ch0105/33">
+ var n=+prompt("n:")
+ var sum=0
+ var sign=-1
+ for(var i=1;i<=n;i++){
+    sum+=-(sign**i)/i
+
+ }   
+ console.log(sum.toFixed(4))
+ 
+    
+
+</script>
+
+<script id="ch0105/33">
+    var n=+prompt("n:")
+    var sum=0
+    var sign=-1
+    for(var i=1;i<=n;i++){
+       sum+=-(sign**i)/i
+   
+    }   
+    console.log(sum.toFixed(4))
+    
+       
+   
+   </script>
+
+<script id="ch0105/34">
+    var n=+prompt("n:")
+    var sum=0
+    var t=1
+    for(var i=1;i<=n;i++){
+       t*=i
+       sum+=t
+   
+    }   
+    console.log(sum)
+    
+       
+   
+   </script>
+
+
+
 
 
 
