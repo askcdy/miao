@@ -1412,6 +1412,66 @@
    
 </script>
 
+<script id="ch0105/43">
+    function prime(x){
+        for(var i=2;i<=Math.ceil(x**0.5);i++){
+            if(x%i==0){
+                return false
+            }
+        
+
+        }
+
+        return true
+    }
+    var n=+prompt("n")
+    var max=0
+    for(var i=Math.floor(n**0.5);i<=n;i++){
+       if(n%i==0&&prime(i)&&(max<i)){
+        max=i
+       }
+
+
+    }
+    console.log(max) 
+   
+</script>
+
+<script id="ch0105/44">
+    function prime(x){
+        if(x==2){
+            return true
+        }
+        for(var i=2;i<=Math.ceil(x**0.5);i++){
+            if(x%i==0){
+                return false
+            }
+        
+
+        }
+
+        return true
+    }
+    prime(4)
+    var n=+prompt("n")
+    var sum=0
+ 
+    for(var i=2;i<=Infinity;i++){
+        if(prime(i)){
+            sum++
+            
+
+
+        }
+        if(sum==n){
+            console.log(i)
+            break
+        }
+
+    }
+   
+</script>
+
 
 
 
