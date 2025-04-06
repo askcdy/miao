@@ -1204,19 +1204,9 @@
 
 </script>
 
-<script id="ch0105/33">
-    var n=+prompt("n:")
-    var sum=0
-    var sign=-1
-    for(var i=1;i<=n;i++){
-       sum+=-(sign**i)/i
-   
-    }   
-    console.log(sum.toFixed(4))
-    
+
        
    
-   </script>
 
 <script id="ch0105/34">
     var n=+prompt("n:")
@@ -1231,7 +1221,211 @@
     
        
    
-   </script>
+</script>
+
+<script id="ch0105/35">
+    var n=+prompt("n:")
+    var sum=1
+    var t=1
+    for(var i=1;i<=n;i++){
+       t*=i
+       sum+=1/t
+   
+    }   
+    console.log(sum.toFixed(10))
+    
+       
+   
+</script>
+
+<script id="ch0105/36">
+    
+    var sum=1
+    var x=+prompt("x:")
+    var n=+prompt("n:")
+    for(var i=1;i<=n;i++){
+       
+       sum+=x**i
+   
+    }   
+    console.log(sum.toFixed(2))
+    
+       
+   
+</script>
+
+<script id="ch0105/37">
+    
+    var M=+prompt("M:")
+    var N=+prompt("N:")
+    var T=M
+    var X=+prompt("X:")
+    for(var i=1;i<=X;i++){
+
+        if(T=M){
+        while(T>=N){
+            T=T-N
+            N++
+           
+        }  
+        T=0
+    }
+    
+        T+=N
+        T=T>M?M:T
+   
+    }   
+    console.log(N)
+    
+       
+   
+</script>
+
+
+<script id="ch0105/38">
+    
+    var N=+prompt("N:")
+    while(N>0){
+
+        var str=""
+        var n=+prompt("n:")
+        for(var i=n;i>=0;i--){
+           var Cn=+prompt("Cn")
+           if(n==0){
+            str=0
+           }
+           if(i>0){
+           str=str+Cn*i+" "
+        }
+
+        }
+        console.log(str)
+        N--
+    }
+    
+       
+   
+</script>
+
+<script id="ch0105/39">
+    
+    var n=+prompt("N:")
+    var sum=0
+    for(var i=1;i<=n;i++){
+        if(i%7==0){
+             continue
+        }
+        var k=i
+        var flag=1
+        while(k>0){
+            if(k%10==7){
+                flag=0
+                break
+                
+            }
+            k=(k-k%10)/10
+
+        }
+        if(flag){
+        sum+=i**2
+    }
+        
+    }
+    console.log(sum)
+    
+    
+       
+   
+</script>
+
+<script id="ch0105/40">
+    function countone(x){
+        var c=0
+        while(x){
+            if(x%10==1){
+                c++
+            }
+            x=(x-x%10)/10
+        }
+        return c
+    }
+    var n=+prompt("n:")
+    var sum=0
+    for(var i=1;i<=n;i++){
+
+        sum+=countone(i)
+    }
+    console.log(sum)
+    
+    
+       
+   
+</script>
+
+<script id="ch0105/41">
+    function counttwo(x){
+        var c=0
+        while(x){
+            if(x%10==2){
+                c++
+            }
+            x=(x-x%10)/10
+        }
+        return c
+    }
+    var L=+prompt("L:")
+    var R=+prompt("R:")
+    var sum=0
+    for(var i=L;i<=R;i++){
+
+        sum+=counttwo(i)
+    }
+    console.log(sum)
+    
+    
+       
+   
+</script>
+
+<script id="ch0105/42">
+    var h=+prompt("h:")
+    var w=+prompt("w:")
+    var s=prompt("symbol")
+    var flag=+prompt("f:")
+    var str=""
+    for(var i=1;i<=h;i++){
+        if(flag){
+            str=str+s.repeat(w)+"\n"
+        } else{
+            if(i==1||i==h){
+                str=str+s.repeat(w)+"\n"
+            } else{
+                str=str+s+" ".repeat(w-2)+s+"\n"
+
+            }
+        }
+        
+        }
+    console.log(str)
+    
+       
+   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
