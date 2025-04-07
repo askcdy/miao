@@ -1496,6 +1496,36 @@
 
 
 
+<script id="narcissistic">
+    var n=+prompt("请输入一个数")
+    function figure(x){
+        var c1=0
+        while(x>1){
+            x=x/10
+            c1++
+        }
+        return c1
+
+    }
+    var sum=0
+    var n1=n
+    var c=figure(n)
+    while (n1>0){
+        sum+=(n1%10)**c
+        n1=(n1-n1%10)/10
+
+    }
+    if(sum==n){
+        console.log("YES")
+    }else{
+        console.log("NO")
+    }
+
+    
+</script>
+
+
+
 
 
 
