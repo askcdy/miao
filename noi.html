@@ -1524,6 +1524,42 @@
     
 </script>
 
+<script id="narcissistics">
+
+    function figure(x){
+        var c1=0
+        while(x>1){
+            x=x/10
+            c1++
+        }
+        return c1
+
+    }
+    function isnarcissistic(n){
+    var sum=0
+    var n1=n
+    var c=figure(n)
+    while (n1>0){
+        sum+=(n1%10)**c
+        n1=(n1-n1%10)/10
+
+    }
+    if(sum==n){
+        return true
+    }else{
+        return false
+    }
+    }
+    for(var i=1;i<=10000;i++){
+        if (isnarcissistic(i)){
+            console.log(i)
+        }
+    }
+    
+</script>
+
+
+
 
 
 
